@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\usercontroller;
 use App\Http\Controllers\produkcontroller;
 use App\Http\Controllers\pembeliancontroller;
+use App\Http\Controllers\dashboardcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,5 @@ Route::get('/pembelian', [pembeliancontroller::class, 'index']);
 Route::post('/simpan-user', [usercontroller::class, 'simpan']);
 
 Route::post('/simpan-produk', [produkcontroller::class, 'simpan']);
+
+Route::get('/dashboard', [dashboardcontroller::class, 'index']);
