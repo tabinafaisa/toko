@@ -81,10 +81,10 @@
                         
                         
                         <li class="nav-item">
-                            <a href="pages/gallery.html" class="nav-link">
+                            <a href="{{url('produk')}}" class="nav-link">
                                 <i class="nav-icon far fa-image"></i>
                                 <p>
-                                    Gallery
+                                    produk
                                 </p>
                             </a>
                         </li>
@@ -165,7 +165,6 @@
         <!-- AdminLTE App -->
         <script src="{{asset('template')}}/dist/js/adminlte.js"></script>
         <!-- AdminLTE for demo purposes -->
-        <script src="{{asset('template')}}/dist/js/demo.js"></script>
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
         <script src="{{asset('template')}}/dist/js/pages/dashboard.js"></script>
 </body>
