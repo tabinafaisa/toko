@@ -30,3 +30,5 @@ Route::post('/simpan-produk', [produkcontroller::class, 'simpan']);
 Route::get('/dashboard', [dashboardcontroller::class, 'index']);
 
 Route::get('/login', [logincontroller::class, 'index']);
+
+Route::post('/ceklogin', [logincontroller::class, 'ceklogin']);
