@@ -5,7 +5,7 @@ use App\Http\Controllers\usercontroller;
 use App\Http\Controllers\produkcontroller;
 use App\Http\Controllers\pembeliancontroller;
 use App\Http\Controllers\dashboardcontroller;
-
+use App\Http\Controllers\logincontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +28,5 @@ Route::post('/simpan-user', [usercontroller::class, 'simpan']);
 Route::post('/simpan-produk', [produkcontroller::class, 'simpan']);
 
 Route::get('/dashboard', [dashboardcontroller::class, 'index']);
+
+Route::get('/login', [logincontroller::class, 'index']);
